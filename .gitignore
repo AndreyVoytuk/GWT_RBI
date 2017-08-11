@@ -1,0 +1,6 @@
+/test-classes/
+*.classpath
+/war/
+.project
+*.settings
+/gwt-unitCache/

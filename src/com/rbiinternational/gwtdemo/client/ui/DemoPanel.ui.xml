@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:demo="urn:import:com.rbiinternational.gwtdemo.client.ui">
+	<ui:with type="com.rbiinternational.gwtdemo.client.ui.image.ImageBundle"
+		field="images" />
+	<ui:with type="com.rbiinternational.gwtdemo.client.ui.i18n.TextBundle"
+		field="i18n" />
+	<ui:style>
+
+	</ui:style>
+	<g:HTMLPanel>
+		<label><g:InlineLabel text="{i18n.labelName}"/>></label>
+		<g:TextBox ui:field="textBox" text="{i18n.labelNameTextboxValue}" />
+		<g:Button ui:field="button" text="{i18n.actionSendButton}" />
+		<g:Image ui:field="busyImage" resource="{images.messageBusy}"
+			visible="false" />
+		<g:Label ui:field="label" visible="false" />
+		<demo:MessagePanel ui:field="messagePanel" />
+	</g:HTMLPanel>
+</ui:UiBinder>
